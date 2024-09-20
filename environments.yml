@@ -1,0 +1,14 @@
+name: terraform-aws
+provider: aws
+flavor: ecs
+version: 1
+
+template_config:
+  template_directory: custom
+
+collections:
+- name: template
+  region: us-east-1
+  account_id: "851725380539"
+  environments:
+  - name: staging
