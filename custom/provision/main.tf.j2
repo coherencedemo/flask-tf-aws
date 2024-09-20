@@ -4,7 +4,7 @@
 {{ super() }}
 
 resource "aws_s3_bucket" "custom_bucket" {
-  bucket = "{{ environment.instance_name }}-bucket"
+  bucket = "{{ environment.instance_name }}"
   force_destroy = true
 }
 {% endblock %}
