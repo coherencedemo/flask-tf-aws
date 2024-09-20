@@ -9,7 +9,7 @@ variable "environment_name" {
 }
 
 resource "aws_s3_bucket" "custom_bucket" {
-  bucket = "${var.environment_name}-bucket"
+  bucket = "{{ environment.instance_name }}-bucket"
   force_destroy = true
 
   tags = {
